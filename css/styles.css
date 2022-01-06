@@ -348,7 +348,7 @@ a:hover {
 .navbar .logo-image img {
     width: 150px;
     height: 46px;
-    content:url(../images/sp-immobilien.png);
+    content:url(../images/sp-immobilien-mobile.png);
 }
 
 .navbar .logo-text {
@@ -508,7 +508,7 @@ a:hover {
 .header .header-content {
     padding-top: 11rem;
     padding-bottom: 9rem;
-    background: linear-gradient(rgba(21, 35, 63, 0.25), rgba(21, 35, 63, 0.5));
+    background: linear-gradient(rgba(21, 35, 63, 0), rgba(21, 35, 63, 0.1));
     background-size: cover;
     text-align: center;
 }
@@ -518,11 +518,54 @@ a:hover {
     color: #ffffff;
     font-size: 2rem;
     line-height: 2.75rem;
+    text-shadow: 2px 2px #000;
 }
 
 .header h1{
     margin-bottom: 1rem;
     color: #ffffff;
+    text-shadow: 2px 2px #000;
+}
+
+.header .carousel { 
+    z-index: -100; /*keeps this behind all content*/
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.header .carousel .item {
+    width: 100%; height: 100%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.carousel .one {
+    background: url(../images/header1.JPG);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .two {
+    background: url(../images/header2.JPG);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .three {
+    background: url(../images/header3.JPG);
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .active.left {
+    left:0;
+    opacity:0;
+    z-index:2;
 }
 
 .header .header-bg {
@@ -534,7 +577,7 @@ a:hover {
     width: auto;
     height: auto;
     z-index: -100;
-    background: url('../images/details-background4.jpg') center center no-repeat;
+    background: url('../images/header3.JPG') center center no-repeat;
     background-size: cover;
 }
 
@@ -856,7 +899,7 @@ a:hover {
 
 .about .area-1 {
     height: 430px;
-    background: url('../images/about.png') center center no-repeat;
+    background: url('../images/stefanpahl.jpg') center center no-repeat;
     background-size: cover;
 }
 
@@ -929,6 +972,9 @@ a:hover {
     color: #efefef;
 }
 
+.antispam {
+    display: none;
+}
 
 /**********************/
 
@@ -1211,7 +1257,7 @@ a:hover {
     /* Navigation */
     .navbar {
         padding-top: 1.75rem;
-        background-color: transparent;
+        background-color: white;
         box-shadow: none;
         transition: all 0.2s;
     }
@@ -1402,6 +1448,11 @@ a:hover {
         max-width: 1140px;
     }
     /* end of general styles */
+    .navbar .logo-image img {
+        width: 150px;
+        height: 46px;
+        content:url(../images/sp-immobilien.png);
+    }
     /* Header */
     .header {
         height: 100vh;
