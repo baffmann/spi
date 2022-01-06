@@ -396,6 +396,7 @@ a:hover {
 }
 
 .navbar .nav-item.dropdown.show .nav-link,
+.navbar .nav-item.dropdown2.show .nav-link,
 .navbar .nav-item .nav-link:hover,
 .navbar .nav-item .nav-link.active {
     color: #1020c6;
@@ -404,7 +405,8 @@ a:hover {
 
 /* Dropdown Menu */
 
-.navbar .dropdown .dropdown-menu {
+.navbar .dropdown .dropdown-menu,
+.navbar .dropdown2 .dropdown-menu2 {
     animation: fadeDropdown 0.2s;
     /* required for the fade animation */
 }
@@ -418,7 +420,8 @@ a:hover {
     }
 }
 
-.navbar .dropdown-menu {
+.navbar .dropdown-menu,
+.navbar .dropdown-menu2 {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
     border: none;
@@ -1291,7 +1294,8 @@ a:hover {
         padding-right: 0.75rem;
         padding-left: 0.75rem;
     }
-    .navbar .dropdown-menu {
+    .navbar .dropdown-menu,
+    .navbar .dropdown-menu2 {
         padding-top: 0.75rem;
         padding-bottom: 0.875rem;
         box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.08);

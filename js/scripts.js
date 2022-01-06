@@ -70,6 +70,44 @@ if (dropdownCheck !== null) {
 		}
 	});
 }
+
+function toggleDropdown2(e) {
+	const _d = e.target.closest(".dropdown2");
+	let _m = document.querySelector(".dropdown-menu2", _d);
+
+	setTimeout(
+		function () {
+		const shouldOpen = _d.matches(":hover");
+		_m.classList.toggle("show", shouldOpen);
+		_d.classList.toggle("show", shouldOpen);
+
+		_d.setAttribute("aria-expanded", shouldOpen);
+		},
+		e.type === "mouseleave" ? 300 : 0
+	);
+}
+
+
+const dropdown2Check = document.querySelector('.dropdown2');
+
+if (dropdown2Check !== null) { 
+
+	document.querySelector(".dropdown2").addEventListener("mouseleave", toggleDropdown2);
+	document.querySelector(".dropdown2").addEventListener("mouseover", toggleDropdown2);
+
+	// On click
+	document.querySelector(".dropdown2").addEventListener("click", (e) => {
+		const _d = e.target.closest(".dropdown2");
+		let _m = document.querySelector(".dropdown-menu2", _d);
+		if (_d.classList.contains("show")) {
+			_m.classList.remove("show");
+			_d.classList.remove("show");
+		} else {
+			_m.classList.add("show");
+			_d.classList.add("show");
+		}
+	});
+}
   
 
 /* Card Slider - Swiper */
