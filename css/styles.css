@@ -1146,6 +1146,11 @@ a:hover {
 
 .ex-header h1 {
     color: #ffffff;
+    font-size: 2rem;
+}
+
+.ex-basic-1 h1 {
+    font-size: 2rem;
 }
 
 .ex-basic-1 .list-unstyled .fas {
@@ -1209,8 +1214,8 @@ a:hover {
 @media (min-width: 768px) {
     /* Header */
     .header .header-content {
-        padding-top: 15rem;
-        padding-bottom: 13rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
     }
     /* end of header */
     /* Statistics */
@@ -1313,6 +1318,20 @@ a:hover {
     /* end of navigation */
     /* Header */
     .header .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .header .btn-solid-lg {
+        padding: 1.875rem 3rem;
+        font-size: 1rem;
+    }
+    /* end of header */
+
+    .header .header-content {
         padding-top: 18rem;
         padding-bottom: 16rem;
     }
@@ -1383,7 +1402,7 @@ a:hover {
     /* end of projects */
     /* About */
     .about {
-        height: 786px;
+        height: 1024px;
     }
     .about .area-1 {
         height: 100%;
@@ -1459,14 +1478,14 @@ a:hover {
     }
     /* Header */
     .header {
-        height: 100vh;
+        height: 80vh;
     }
     .header .header-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100vh;
-        padding-top: 0;
+        height: 70%;
+        padding-top: 6rem;
         padding-bottom: 0;
     }
     .header .btn-solid-lg {

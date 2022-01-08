@@ -8,8 +8,11 @@ window.onscroll = function () {
 };
 
 window.onload = function () {
-	scrollFunction();
-	$('#spiCarousel').carousel();
+	var carousel = document.querySelector('#spiCarousel');
+	if (carousel) {
+		scrollFunction();
+		$('#spiCarousel').carousel();
+	}	
 };
 
 function scrollFunction() {
