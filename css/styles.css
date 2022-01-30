@@ -604,12 +604,13 @@ a:hover {
 }
 
 .cards-1 .p-heading {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
 .cards-1 .card {
     margin-bottom: 4rem;
+    margin-top: 1rem;
     border: none;
     border-radius: 6px;
 }
@@ -744,7 +745,7 @@ a:hover {
 
 .basic-3 {
     padding-top: 5rem;
-    padding-bottom: 9.75rem;
+    padding-bottom: 3.75rem;
 }
 
 .basic-3 .image-container {
@@ -768,9 +769,13 @@ a:hover {
 /********************/
 
 .filter {
-    padding-top: 9.5rem;
+    padding-top: 2.5rem;
     padding-bottom: 5.625rem;
     text-align: center;
+}
+
+.filter h1 {
+    font-size: 1.75rem;
 }
 
 .filter h2 {
